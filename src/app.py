@@ -8,8 +8,8 @@ app = Flask(__name__)
 CORS(app)
 startTime = datetime.now()
 tm = ThematicModeller(
-    dict_path='./data/wiki_en_output_wordids.txt.bz2',
-    model_path='./data/wiki_lda.pkl')
+    dict_path='./src/data/wiki_en_output_wordids.txt.bz2',
+    model_path='./src/data/wiki_lda.pkl')
 
 
 @app.route('/get_themes', methods=['POST'])
