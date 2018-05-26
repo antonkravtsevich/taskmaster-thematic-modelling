@@ -6,6 +6,10 @@ class ThematicModeller:
     def __init__(self, dict_path, model_path):
         self.dictionary = gensim.corpora.Dictionary.load_from_text(dict_path)
         self.model = gensim.models.ldamodel.LdaModel.load(model_path)
+        self.topics = {}
+        for i in range(0, 100):
+            self.topics[i] = self.model.show_topic(i)
+        print('Topics loaded')
 
     def get_text_thems(self, text):
         text_lower = text.lower()
@@ -21,7 +25,7 @@ class ThematicModeller:
         return themes
 
     def get_theme_words(self, theme_number):
-        words_raw = self.model.show_topic(theme_number)
+        words_raw = self.topics[theme_number]
         words = []
         for word in words_raw:
             words.append({
