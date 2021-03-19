@@ -11,7 +11,7 @@ Flask-Cors==3.0.3
 gensim==3.4.0
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 MarkupSafe==1.0
 numpy==1.14.2
@@ -36,7 +36,7 @@ Flask-Cors==3.0.3
 gensim==3.4.0
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 MarkupSafe==1.0
 numpy==1.14.2
@@ -63,7 +63,7 @@ gensim==3.4.0
 google-compute-engine==2.7.6
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 MarkupSafe==1.0
 numpy==1.14.2
